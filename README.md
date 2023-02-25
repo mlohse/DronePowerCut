@@ -1,4 +1,4 @@
-# DronePwrCut
+# DronePowerCut
 
 This board is supposed to be connected between the main battery and the flight controller of a drone/opto-copter and provides an emergency power-off in case the drone get's out of control.
 The board has been designed for 6s LiPo batteries (22.2V) and can handle continuous currents of up to 80A.
@@ -28,23 +28,23 @@ On Arch Linux simply install the following packages:
 
 `# pacman -S community/avr-gcc community/avr-binutils community/avr-libc`
 
-You may likely want to install avrdude (of course if your programmer requires different software you can skip this step):
+You may likely want to install avrdude (of course if your programmer requires a different software you can skip this step):
 
 `# pacman -S avrdude`
 
-Keep in mind to adapt the `PROGRAMMER`/`PORT` sections in the `Makefile`.
+Please don't forget to adapt the `PROGRAMMER`/`PORT` section in the `Makefile` according to your programmer.
 
 
 To build the firmware change into the `src` directory and run:
 
 `# make`
 
-...then connect the board to your ISP programmer - the boards needs to be powered (consumes < 50mA) through the programmer - and flash the fuses:
-
-`# make fuses`
-
-...and firmware:
+...then connect the board to your ISP programmer - the boards needs to be powered (consumes < 50mA) through the programmer - and flash the firmware:
 
 `# make program`
+
+**Optional**: It shouldn't be necessary to flash fuses, as they are left to defaults. But in case the MCU behaves weird in any way...
+
+`# make fuses`
 
 Done.
