@@ -48,3 +48,19 @@ To build the firmware change into the `src` directory and run:
 `# make fuses`
 
 Done.
+
+
+# LED States (Debugging)
+
+## Power LED (blue)
+This led should always be flashing with 1Hz during opartion. If constantly lid or off the MCU has crashed - should never happen of course ;)
+
+## Activity LED (green)
+This led indicated whether there is a signal from the receiver:
+
+* **off**: no signal
+* **flashing with 5Hz**: invalid signal (pulse to short/long, see `CTRL_DECODER_VAL_MIN`/`CTRL_DECODER_VAL_MAX`)
+* **constantly lid**: signal ok (during normal operation this should always be the case)
+
+## OFF LED (red)
+This led indicates when lid that power has been cut (emergency off active).
