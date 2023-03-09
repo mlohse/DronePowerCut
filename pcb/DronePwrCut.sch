@@ -18620,7 +18620,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="C9" library="rcl" deviceset="C-EU" device="C1206K" value="1nF"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="27k"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="10k"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="4k7"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="10k"/>
 <part name="D7" library="diode" deviceset="DIODE-" device="SMC" value="MBRS340"/>
@@ -18664,7 +18664,7 @@ Source: http://www.semicon.toshiba.co.jp/td/en/Opto/Photocoupler/en_20050928_TLP
 <part name="PAD2_BAT-" library="wirepad" deviceset="1,6/0,8" device="" value="BAT-"/>
 <part name="PAD1_BAT+" library="wirepad" deviceset="1,6/0,8" device="" value="BAT+"/>
 <part name="PAD1_V-" library="wirepad" deviceset="1,6/0,8" device="" value="V-"/>
-<part name="R8" library="rcl" deviceset="R-EU_" device="R1206" value="20k"/>
+<part name="R8" library="rcl" deviceset="R-EU_" device="R1206" value="40k2"/>
 <part name="PAD3_V-" library="wirepad" deviceset="1,6/0,8" device="" value="V-"/>
 <part name="PAD4_V-" library="wirepad" deviceset="1,6/0,8" device="" value="V-"/>
 <part name="PAD5_V-" library="wirepad" deviceset="1,6/0,8" device="" value="V-"/>
